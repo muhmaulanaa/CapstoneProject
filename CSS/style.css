@@ -1,0 +1,183 @@
+:root {
+    --primary: #1E463B;
+    --secondary: #3C806D;
+    --muda: #E2EDE9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    border: none;
+}
+
+body {
+    font-family: 'Poppins', 'sans-Serif';
+    background-color: var(--muda);
+    color: var(--primary);
+}
+
+/*navbar*/
+.logo {
+    width: 130px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.navigationn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-right: 40px;
+    background-color: var(--primary);
+    position: fixed;
+    width: 100%;
+}
+
+.navbar-menu {
+    color: var(--muda);
+}
+
+.navbar-menu a {
+    color: #E2EDE9;
+    padding: 15px;
+    font-weight: 500;
+}
+
+.navbar-menu a:hover {
+    color: #3C806D;
+}
+
+.navbar-menu a.btn-active {
+    color: #4af3b5;
+}
+
+.login {
+    background-color: #4af3b5;
+    border: 1px solid #4af3b5;
+    border-radius: 5px;
+    color: var(--primary);
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Poppins';
+}
+
+.login:hover {
+    background-color: #37a77d;
+    color: var(--muda);
+}
+
+.register {
+    background-color: var(--primary);
+    border: 1px solid #4af3b5;
+    border-radius: 5px;
+    color: var(--muda);
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Poppins';
+}
+
+.register:hover {
+    background-color: #37a77d;
+}
+
+/*home*/
+.slide img {
+    width: 100%;
+    height: auto;
+    padding-top: 60px;
+}
+
+
+
+/* about us */
+.about-us {
+    padding: 90px;
+}
+
+.about,
+.menu,
+.products,
+.contact {
+    padding: 8rem 7% 1.4rem;
+}
+
+.about h2,
+.menu h2,
+.products h2,
+.contact h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+}
+
+.about h2 span,
+.menu h2 span,
+.products h2 span,
+.contact h2 span {
+    color: var(--primary);
+}
+
+.about .row {
+    display: flex;
+}
+
+.about .row .about-img {
+    flex: 1 1 45rem;
+}
+
+.about .row .about-img img {
+    width: 100%;
+    margin-top: 12px;
+}
+
+.about .row .content {
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+
+.about .row .content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.about .row .content p {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 200;
+    line-height: 1.6;
+}
+
+.about .row .about-img-second {
+    flex: 1 1 45rem;
+}
+
+.about .row .about-img-second img {
+    width: 100%;
+    margin-top: 8px;
+}
+
+/*products*/
+.products {
+    padding: 90px;
+}
+
+/*customers*/
+.customers {
+    padding: 90px;
+}
