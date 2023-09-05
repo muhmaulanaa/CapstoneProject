@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#logo{
+   text-align: center;
+   margin-top: 20px;
+}
+
+.left img, .right img{
+    max-width: 100%;
+    
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.left{
+    flex: 1;
+    padding: 20px;
+}
+
+.right{
+    flex: 1;
+    padding: 20px;
+}
+/*
+*Style untuk carousel
+*/
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    margin-top: 50px; 
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    margin: 0 auto;
+   
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+img {
+    max-width: 100%;
+    height: auto;
+   
+}
