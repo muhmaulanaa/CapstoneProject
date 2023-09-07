@@ -35,6 +35,7 @@ body {
     background-color: var(--primary);
     position: fixed;
     width: 100%;
+    z-index: 10000;
 }
 
 .navbar-menu {
@@ -48,11 +49,11 @@ body {
 }
 
 .navbar-menu a:hover {
-    color: #3C806D;
+    color: #2ccea0;
 }
 
 .navbar-menu a.btn-active {
-    color: #4af3b5;
+    color: #45f5b4;
 }
 
 .login {
@@ -69,41 +70,33 @@ body {
     cursor: pointer;
     text-decoration: none;
     font-family: 'Poppins';
+    z-index: 10000;
 }
 
 .login:hover {
     background-color: #37a77d;
     color: var(--muda);
+    z-index: 10000;
 }
 
-.register {
-    background-color: var(--primary);
-    border: 1px solid #4af3b5;
-    border-radius: 5px;
-    color: var(--muda);
-    padding: 5px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    margin: 4px 2px;
-    cursor: pointer;
-    text-decoration: none;
-    font-family: 'Poppins';
+.login i{
+    padding-right: 5px;
+    z-index: 10000;
 }
 
-.register:hover {
-    background-color: #37a77d;
-}
-
-/*home*/
-.slide img {
+/* Video */
+.video_opening{
     width: 100%;
-    height: auto;
-    padding-top: 60px;
+    height: 100vh;
+    padding-top: 69px;
 }
 
-
+.video_opening video{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
 
 /* about us */
 .about-us {
@@ -170,14 +163,4 @@ body {
 .about .row .about-img-second img {
     width: 100%;
     margin-top: 8px;
-}
-
-/*products*/
-.products {
-    padding: 90px;
-}
-
-/*customers*/
-.customers {
-    padding: 90px;
 }
