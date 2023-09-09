@@ -41,7 +41,7 @@
 /* cart */
 #cart{
     position: absolute;
-    top: 50;
+    top: 10;
     right: 55px;
     text-decoration: none;
     color: #1E463B;
@@ -49,6 +49,7 @@
     border: 1px solid #224b3c;
     border-radius: 20px;
     z-index: 800;
+    transition: 1s;
 }
 
 #cart:hover{
@@ -64,7 +65,7 @@
 }
 
 /* category */
-.categories a {
+.categories-container a {
     padding: 30px;
     padding-bottom: 10px;
     text-decoration: none; 
@@ -72,9 +73,15 @@
     transition: color 0.1s, border-bottom 0.1s; 
 }
 
-.categories a:hover {
+.categories-container a:hover {
     color: #246326; 
     border-bottom: 2px solid #246326; 
+    font-weight: bold;
+}
+
+.categories-container a.active {
+    color: #246326;
+    border-bottom: 2px solid #246326;
     font-weight: bold;
 }
 
