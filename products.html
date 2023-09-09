@@ -13,6 +13,9 @@
     <!-- icon fontawesome-->
     <script src="https://kit.fontawesome.com/cf76925589.js" crossorigin="anonymous"></script>
 
+    <!-- AOS (Animate On Scrool) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- logo tab -->
     <link rel="shortcut icon" href="assets/logo-tabb.png" type="image/x-icon">
 
@@ -38,13 +41,13 @@
         <div class="btn-navbar">
             <a href="login_register.html">
                 <button class="login" type="button">
-                <i class="fas fa-user"></i> Account
+                    <i class="fas fa-user"></i> Account
                 </button>
             </a>
         </div>
     </header>
 
-    <!--HOME AUTOSLIDE-->
+    <!--AUTOSLIDE-->
     <section>
         <div class="slides">
             <div class="slide">
@@ -71,193 +74,284 @@
     </section>
 
     <!-- content -->
-    <section class="products">
-        <a href="checkout.html">
-            <i class="fa-solid fa-cart-shopping" id="cart"></i>
-        </a>
-        
+    <section class="products" id="coffee-menu">
 
-        <h1>OUR MENUS</h1> <br> <br>
+        <a href="checkout.html"><i class="fa-solid fa-cart-shopping" id="cart"></i></a>
 
-        <div class="categories">
-            <a href="products.html">ALL</a>
-            <a href="products_hot.html">HOT COFFEE</a>
-            <a href="products_cold.html">COLD COFFEE</a>
-            <a href="products_powder.html">POWDER COFFEE</a>
+        <div class="categories-container">
+            <h1>OUR MENUS</h1> <br> <br>
+            <a href="#coffee-menu" class="category-option active" data-filter="all">ALL</a>
+            <a href="#coffee-menu" class="category-option" data-filter="hot">HOT COFFEE</a>
+            <a href="#coffee-menu" class="category-option" data-filter="cold">COLD COFFEE</a>
+            <a href="#coffee-menu" class="category-option" data-filter="powder">POWDER COFFEE</a>
         </div>
         <br> <br>
 
         <!-- menu -->
         <div class="menu-container">
-            <!-- Baris 1 -->
-            <div class="menu-item" id="hot">
-                <img src="assets/1.hot_Vanilla_Latte_White.png" alt="hot 1">
-                <h2>Vanilla Latte White</h2>
+            <!-- HOT -->
+            <div class="menu-item" data-category="hot" data-aos="zoom-in-up">
+                <img src="assets/1.hot_Hot_Matcha_Latte.jpg" alt="hot 1">
+                <h2>Hot Matcha Latte</h2>
                 <p>Rp. 39.000</p>
                 <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
             </div>
 
-            <div class="menu-item" id="hot">
-                <img src="assets/2.hot_Shakerato_Italian_Coffee.png" alt="hot 2">
-                <h2>Shakerato Italian Coffe</h2>
+            <div class="menu-item" data-category="hot" data-aos="zoom-in-up">
+                <img src="assets/2.hot_Cappucino Coffee.jpg" alt="hot 2">
+                <h2>Cappucino Coffee</h2>
                 <p>Rp. 39.000</p>
                 <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
             </div>
 
-            <div class="menu-item" id="hot">
-                <img src="assets/3.hot_Mugwort_Latte.png" alt="hot 3">
-                <h2>Mugwort Latte</h2>
+            <div class="menu-item" data-category="hot" data-aos="zoom-in-up">
+                <img src="assets/3.hot_Shakerato_Italian_Coffe.jpg" alt="hot 3">
+                <h2>Shakerato Italian Coffee</h2>
                 <p>Rp. 45.000</p>
                 <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
             </div>
 
-            <div class="menu-item" id="hot">
-                <img src="assets/4.hot_Misti_Coffee_with_Milk.png" alt="hot 4">
-                <h2>Misto Coffe With Milk</h2>
+            <div class="menu-item" data-category="hot" data-aos="zoom-in-up">
+                <img src="assets/4.hot_Hazelnut_Bianco_Latte.jpg" alt="hot 4">
+                <h2>Hazelnut Bianco Latte</h2>
                 <p>Rp. 40.000</p>
                 <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
             </div>
 
-            <!-- Baris 2 -->
-            <div class="menu-item" id="hot">
-                <img src="assets/5.hot_Long_Black_Coffee.png" alt="hot 5">
-                <h2>Long Black Coffe</h2>
+            <div class="menu-item" data-category="hot" data-aos="zoom-in-up">
+                <img src="assets/5.hot_Mugwort_Latte.jpg" alt="hot 5">
+                <h2>Mugwort Latte</h2>
                 <p>Rp. 30.000</p>
                 <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
             </div>
 
-            <div class="menu-item" id="hot">
-                <img src="assets/6.hot_Hazelnut_Bianco_Latte.png" alt="hot 6">
-                <h2>Hazelnut Bianco Latte</h2>
+            <div class="menu-item" data-category="hot" data-aos="zoom-in-up">
+                <img src="assets/6.hot_Vanilla_Latte_White.jpg" alt="hot 6">
+                <h2>Vanilla Latte White</h2>
                 <p>Rp. 50.000</p>
                 <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
             </div>
 
-            <div class="menu-item" id="hot">
-                <img src="assets/7.hot_Espresso_Coffee.png" alt="hot 7">
-                <h2>Espresso Coffe</h2>
+            <div class="menu-item" data-category="hot" data-aos="zoom-in-up">
+                <img src="assets/7.Misto_Coffee_With_Milk.jpg" alt="hot 7">
+                <h2>Misto Coffee With Milk</h2>
                 <p>Rp. 37.000</p>
                 <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
             </div>
 
-            <div class="menu-item" id="hot">
-                <img src="assets/8.hot_Hot_Coffe_Cappucino.jpg" alt="hot 8">
-                <h2>Hot Cappucino</h2>
+            <div class="menu-item" data-category="hot" data-aos="zoom-in-up">
+                <img src="assets/8.hot_Hot_Caramel.jpg" alt="hot 8">
+                <h2>Hot Carammel</h2>
                 <p>Rp. 42.000</p>
                 <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
             </div>
 
             <!-- Baris 3 -->
-            <div class="menu-item" id="hot">
-                <img src="assets/9.hot_Caramel.png" alt="hot 9">
-                <h2>Hot Caramel</h2>
+            <div class="menu-item" data-category="hot" data-aos="zoom-in-up">
+                <img src="assets/9.hot_Long_Black_Coffe.jpg" alt="hot 9">
+                <h2>Long Black Coffee</h2>
                 <p>Rp. 40.000</p>
                 <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
             </div>
 
-            <div class="menu-item" id="hot">
-                <img src="assets/10.hot_Hot_Matcha_Latte.jpg" alt="hot 10">
-                <h2>Hot Matcha Latte</h2>
+            <div class="menu-item" data-category="hot" data-aos="zoom-in-up">
+                <img src="assets/10.hot_Espresso_Coffe.jpg" alt="hot 10">
+                <h2>Espresso Coffee</h2>
                 <p>Rp. 35.000</p>
                 <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
             </div>
 
-            <div class="menu-item" id="hot">
-                <img src="assets/11.hot_Cinnamon_Dolce_Latte.png" alt="hot 11">
+            <div class="menu-item" data-category="hot" data-aos="zoom-in-up">
+                <img src="assets/11.hot_Cinnamon_Dolce_Latte.jpg" alt="hot 11">
                 <h2>Cinnamon Dolce Latte</h2>
                 <p>Rp. 37.000</p>
                 <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
             </div>
 
-            <div class="menu-item" id="hot">
-                <img src="assets/12.hot_Honey_Almondmilk_Flat_White.png" alt="hot 12">
-                <h2>Honey Almondmilk</h2>
+            <div class="menu-item" data-category="hot" data-aos="zoom-in-up">
+                <img src="assets/12.hot_Honey_Almonmilk.jpg" alt="hot 12">
+                <h2>Honey Almonmilk</h2>
                 <p>Rp. 48.000</p>
                 <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
             </div>
 
-            <!-- Baris 4 -->
-            <div class="menu-item" id="cold">
-                <img src="assets/1.cold_Black_Sesame_Frappucino.jpg" alt="cold 1">
+            <!-- COLD -->
+            <div class="menu-item" data-category="cold" data-aos="zoom-in-up">
+                <img src="assets/1.cold_Strawberry_Creamy_Frappucino.png" alt="cold 1">
+                <h2>Strawberry Frappucino</h2>
+                <p>Rp. 40.000</p>
+                <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-category="cold" data-aos="zoom-in-up">
+                <img src="assets/2.cold_Pisvocado_Frappucino.png" alt="cold 2">
+                <h2>Pisvocado Frappucino</h2>
+                <p>Rp. 30.000</p>
+                <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-category="cold" data-aos="zoom-in-up">
+                <img src="assets/3.cold_Matcha_Frappucino.png" alt="cold 3">
+                <h2>Matcha Frappucino</h2>
+                <p>Rp. 31.000</p>
+                <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-category="cold" data-aos="zoom-in-up">
+                <img src="assets/4.cold_Vanilla_Frappucino.png" alt="cold 4">
+                <h2>Vanilla Frappucino</h2>
+                <p>Rp. 49.000</p>
+                <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-category="cold" data-aos="zoom-in-up">
+                <img src="assets/5.cold_Iced_Peppermint_Mocha.png" alt="cold 5">
+                <h2>Iced Pappermint Mocha</h2>
+                <p>Rp. 48.000</p>
+                <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-category="cold" data-aos="zoom-in-up">
+                <img src="assets/6.cold_Lotus_Coffeelatte.png" alt="cold 6">
+                <h2>Lotus Coffee Latte</h2>
+                <p>Rp. 45.000</p>
+                <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-category="cold" data-aos="zoom-in-up">
+                <img src="assets/7.cold_Java_Chip_Frappucino.png" alt="cold 7">
+                <h2>Java Chip Frappucino</h2>
+                <p>Rp. 45.000</p>
+                <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-category="cold" data-aos="zoom-in-up">
+                <img src="assets/8.cold_Con_Panna.jpg" alt="cold 8">
+                <h2>Con Panna</h2>
+                <p>Rp. 42.000</p>
+                <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-category="cold" data-aos="zoom-in-up">
+                <img src="assets/9.cold_Iced_Espresso.png" alt="cold 9">
+                <h2>Iced Espresso</h2>
+                <p>Rp. 48.000</p>
+                <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-category="cold" data-aos="zoom-in-up">
+                <img src="assets/10.cold_Glace_Coffee.png" alt="cold 10">
+                <h2>Glace Coffee</h2>
+                <p>Rp. 45.000</p>
+                <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-category="cold" data-aos="zoom-in-up">
+                <img src="assets/11.cold_Black Sesame Frappucino.png" alt="cold 11">
                 <h2>Black Sesame Frappucino</h2>
                 <p>Rp. 40.000</p>
                 <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
             </div>
 
-            <div class="menu-item" id="cold">
-                <img src="assets/2.cold_Glace_Coffee.jpg" alt="cold 2">
-                <h2>Glace Coffee</h2>
-                <p>Rp. 30.000</p>
+            <div class="menu-item" data-category="cold" data-aos="zoom-in-up">
+                <img src="assets/12.cold_Classic Afogato.png" alt="cold 12">
+                <h2>Affogato Classic</h2>
+                <p>Rp. 34.000</p>
                 <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
             </div>
 
-            <div class="menu-item" id="cold">
-                <img src="assets/3.cold_Iced_Espresso.jpg" alt="cold 3">
-                <h2>Iced Espresso</h2>
-                <p>Rp. 31.000</p>
+            <!-- POWDER -->
+            <div class="menu-item" data-category="powder" data-aos="zoom-in-up">
+                <img src="assets/" alt="powder 1">
+                <h2></h2>
+                <p>Rp. </p>
                 <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
             </div>
 
-            <div class="menu-item" id="cold">
-                <img src="assets/4.cold_Iced_Peppermint_Mocha.jpg" alt="cold 4">
-                <h2>Iced Pappermint Mocha</h2>
-                <p>Rp. 49.000</p>
+            <div class="menu-item" data-category="powder" data-aos="zoom-in-up">
+                <img src="assets/" alt="powder 2">
+                <h2></h2>
+                <p>Rp. </p>
                 <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
             </div>
 
-            <!-- Baris 5 -->
-            <div class="menu-item" id="cold">
-                <img src="assets/5.cold_Java_Chip_Frappucino.jpg" alt="cold 5">
-                <h2>Java Chip Frappucino</h2>
-                <p>Rp. 48.000</p>
+            <div class="menu-item" data-category="powder" data-aos="zoom-in-up">
+                <img src="assets/" alt="powder 3">
+                <h2></h2>
+                <p>Rp. </p>
                 <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
             </div>
 
-            <div class="menu-item" id="cold">
-                <img src="assets/6.cold_Lotus_Coffeelatte.jpg" alt="cold 6">
-                <h2>Lotus Coffe Latte</h2>
-                <p>Rp. 45.000</p>
+            <div class="menu-item" data-category="powder" data-aos="zoom-in-up">
+                <img src="assets/" alt="powder 4">
+                <h2></h2>
+                <p>Rp. </p>
                 <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
             </div>
 
-            <div class="menu-item" id="cold">
-                <img src="assets/7.cold_Matcha_Frappucino.jpg" alt="cold 7">
-                <h2>Matcha Frappucino</h2>
-                <p>Rp. 45.000</p>
+            <div class="menu-item" data-category="powder" data-aos="zoom-in-up">
+                <img src="assets/" alt="powder 5">
+                <h2></h2>
+                <p>Rp. </p>
                 <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
             </div>
 
-            <div class="menu-item" id="cold">
-                <img src="assets/8.cold_Pisvocado_Frappucino.jpg" alt="cold 8">
-                <h2>Pisvacado Frappucino</h2>
-                <p>Rp. 42.000</p>
+            <div class="menu-item" data-category="powder" data-aos="zoom-in-up">
+                <img src="assets/" alt="powder 6">
+                <h2></h2>
+                <p>Rp. </p>
                 <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
             </div>
 
-            <!-- Baris 6 -->
-            <div class="menu-item" id="cold">
-                <img src="assets/9.cold_Strawberry_Creamy_Frappucino.jpg" alt="cold 9">
-                <h2>Strawberry Frappucino</h2>
-                <p>Rp. 48.000</p>
+            <div class="menu-item" data-category="powder" data-aos="zoom-in-up">
+                <img src="assets/" alt="powder 7">
+                <h2></h2>
+                <p>Rp. </p>
                 <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
             </div>
 
-            <div class="menu-item" id="cold">
-                <img src="assets/10.cold_Vanilla_Frappucino.jpg" alt="cold 10">
-                <h2>Vanilla Frappucino</h2>
-                <p>Rp. 45.000</p>
+            <div class="menu-item" data-category="powder" data-aos="zoom-in-up">
+                <img src="assets/" alt="powder 8">
+                <h2></h2>
+                <p>Rp. </p>
                 <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
             </div>
 
-            <div class="menu-item" id="cold">
-                <img src="assets/11.cold_Afogato_Ice_Cream.jpg" alt="cold 11">
-                <h2>Afogato Ice Cream</h2>
-                <p>Rp. 45.000</p>
+            <div class="menu-item" data-category="powder" data-aos="zoom-in-up">
+                <img src="assets/" alt="powder 9">
+                <h2></h2>
+                <p>Rp. </p>
+                <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-category="powder" data-aos="zoom-in-up">
+                <img src="assets/" alt="powder 10">
+                <h2></h2>
+                <p>Rp. </p>
+                <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-category="powder" data-aos="zoom-in-up">
+                <img src="assets/" alt="powder 11">
+                <h2></h2>
+                <p>Rp. </p>
+                <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
+            </div>
+
+            <div class="menu-item" data-category="powder" data-aos="zoom-in-up">
+                <img src="assets/" alt="powder 12">
+                <h2></h2>
+                <p>Rp. </p>
                 <button class="add-to-cart-button"><i class="fa-solid fa-cart-plus"></i>Add to Cart</button>
             </div>
         </div>
 
         <script src="JS/script.js"></script>
+        <script src="JS/products.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 
 </html>
