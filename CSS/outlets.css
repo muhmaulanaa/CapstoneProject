@@ -7,29 +7,52 @@ body {
     min-height: 100vh;
 }
 
-#logo{
-   text-align: center;
-   margin-top: 20px;
-}
 
-.left img, .right img{
-    max-width: 90%;
-    
-}
-.content{
+
+/* Style for the store card */
+.store-card {
+    border: solid 1px #b3b3b3;
+    border-radius: 8px;
+    padding: 16px 22px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px;
+    flex-direction: row;
+    margin: 0 0 25px 0;
+    gap: 20px;
 }
 
-.left{
+/* Style for the store image on the left */
+.map-image {
+    max-width: 200px; 
+    max-height: 200px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+/* Style for the store details on the right */
+.map-right {
     flex: 1;
-    padding: 20px;
+    padding: 0 0 0 30px;
 }
 
-.right{
-    flex: 1;
-    padding: 20px;
+.map-right h2 {
+    font-size: 1.5rem; 
+    margin-top: 0;
+    margin-bottom: 10px; 
 }
 
+.map-right p {
+    margin-bottom: 5px;
+}
+
+/* Style for the container of store cards */
+.store-cards {
+    display: flex;
+    flex-wrap: wrap; /* Memungkinkan kartu untuk melanjutkan ke baris berikutnya ketika lebar tidak cukup */
+    gap: 20px; /* Jarak antara kartu */
+}
+
+/* Style for store items */
+.map-item {
+    flex: 0 0 calc(50% - 10px); /* Membagi layar menjadi dua kolom dengan jarak 10px */
+    /* 10px adalah setengah dari jarak antara kartu (20px) */
+}
